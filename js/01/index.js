@@ -14,6 +14,8 @@ let part1Res = 0;
 for (let i = 0; i < lefts.length; i++) {
     part1Res += Math.abs(lefts[i] - rights[i]);
 }
+console.log(part1Res);
+
 // END PART 1
 
 let sim = [];
@@ -29,4 +31,5 @@ lefts.forEach((l) => {
 let part2Res = sim.reduce((acc, curr) => {
     return acc += curr.value * curr.count;
 }, 0);
+
 console.log(part2Res);
